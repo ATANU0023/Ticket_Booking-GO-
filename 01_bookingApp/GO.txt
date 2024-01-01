@@ -1,0 +1,102 @@
+//package main		// 8. as u can see iam making an package first and main is the standerd name.
+
+//import "fmt"  // 9. 'fmt' stands for format package
+
+//10. at the first line of the code we have to give the entry point . where to start the program? where is the entrypoint?
+//11. declare from where to start executing to the compiler.
+
+//6. The 'main' function is the entrypoint of a go program..
+/*
+func main(){  // 7. we have to give the logic whatever we are tring to execute within the brases(within the main function).
+
+	fmt.Println("hello world")
+
+}
+*/
+
+//A program can only have 1 'main' function because you can only have 1 entrypoint.
+
+// 1. if we simply run this it will not work to make it work we need to make a package or u can say a module.
+// 2. to make this the command is - go mod init <module path>
+// 3. creates a new module
+// 4. module path can correspond to a repository you plan to publish your module to (e.g . github.com/atanu/booking.app)
+// 5. basically the command do in background is - 
+		//initialize a go.mod file
+		//describe the module: with atanu/module path and go version used in the program
+		//the module path is also the import path (e.g. import "github.com/atanu/booking-app")
+
+// 12. in go all our code must belong to a package
+//13. the first statement in go file must be "package...."
+
+//14. go programs are organized into packages
+//15. go's standerd library, provides different core packages fo us to use.
+//16. "fmt" is one of these , which you can by importing it.
+
+//17. https://www.tldraw.com/r/U7uuNbqq_VSRGFY4Tmku0?viewport=0,0,1536,750&page=page:nr9EGshUowSlxHYgvOwmh
+
+//18. go run <file name> = copiles and runs the code
+
+
+/*
+the 25 keywords of the go language are:
+
+break, default, func, interface, select, case, defer, go, map, struct
+chan, else, goto, package, switch, const, fallthrough, if, range, type
+continue, for, import, return, var,
+
+*/
+
+
+//Formating output - printf
+
+Printf formatted data
+
+fmt.printf("some text with a variable %s", myVariable)
+
+it takes a template string that contains the text that needs to be formatted
+plus some annotation verbs (or placeholder) that tells the fmt function how to format the variable passed in
+
+
+################## Datatypes in go
+
+
+ex 1: var userName = "atanu"
+here go compiler can understand that it is a string datatype , because the value of the variable is immediately assign to it
+
+but for ex 2: var userPassword
+
+userPassword = 123
+here we havn't declare	the value immediately, so go compiler does'n understand the type of the data  for this
+situation we need to declare the datatype.
+
+GO 		 JAVA
+
+int8  => byte  (unsigned 8-bit integer(-127 to 127))
+int16 => short	(unsigned 16-bit integer(-32768 to 32767))
+int32 => int	(unsigned 32-bit integer(-2147483648 to 2147483648))
+int64 => long	(unsigned 32-bit integer(-9223372036854775807 to 9223372036854775807))
+
+"Syntactic Suger" in Programming
+0 A term to describe a feature in a language that let's you do smth more easily
+0 Makes the language "sweeter" for human use
+0 But doesn't add my new functionality that it didn't already have
+
+
+
+A List that is more dynamic in size
+
+where we don't need to specify a size at the begining
+automatically expands when new element are added..
+
+#### SLICE
+
+slice is an abstraction of an array
+slice are more flexible and powerfull:
+	variable-length or get an sub-array of its own.
+slices are also index based and have a size , but is resized when needed.
+
+## 3 Level of Scope
+
+local		Package 		Global
+
+
